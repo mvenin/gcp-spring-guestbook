@@ -6,12 +6,8 @@
 
 if [[ $1 == cloud ]]
 then
-  cd ./gcp-spring-guestbook-api && \
   ./mvnw spring-boot:run -DskipTests -Dspring-boot.run.jvmArguments="-Dspring.profiles.active=cloud"
 else
-  cd ./gcp-spring-guestbook-api && \
   ./mvnw spring-boot:run -DskipTests
 fi
 
-#curl -XPOST -H "content-type: application/json"   -d '{"name": "Ray", "message": "Hello CloudSQL"}'   http://localhost:8081/guestbookMessages
-#curl http://localhost:8081/guestbookMessages
