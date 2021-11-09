@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#export GOOGLE_APPLICATION_CREDENTIALS="/x/y"
 #export PROJECT_ID=$(gcloud config list --format 'value(core.project)')
+#export GOOGLE_APPLICATION_CREDENTIALS=$HOME/service-account.json
 
 ./mvnw clean install -DskipTests
 
