@@ -9,8 +9,8 @@ if [[ $1 == cloud ]]
 then
   cd ./gcp-spring-guestbook-api && \
   ./mvnw spring-boot:run -DskipTests \
-         -Dspring-boot.run.jvmArguments="-Dspring.profiles.active=cloud" \
-         -Dspring.cloud.gcp.credentials.location="file:///$HOME/service-account.json"
+         -Dspring-boot.run.jvmArguments="-Dspring.profiles.active=cloud" 
+        #  -Dspring.cloud.gcp.credentials.location="file:///$HOME/service-account.json"
 else
   cd ./gcp-spring-guestbook-api && \
   ./mvnw spring-boot:run -DskipTests
