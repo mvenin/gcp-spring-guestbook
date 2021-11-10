@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export PROJECT_ID=$(gcloud config list --format 'value(core.project)')
+export PROJECT_ID=$(gcloud config list --formgit branchat 'value(core.project)')
 export GOOGLE_APPLICATION_CREDENTIALS=$HOME/service-account.json
 
 ./mvnw clean install -DskipTests
