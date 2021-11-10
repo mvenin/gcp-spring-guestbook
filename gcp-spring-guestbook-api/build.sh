@@ -21,3 +21,5 @@ fi
 # ./mvnw package appengine:deploy -DskipTests
 # gcloud app logs tail -s guestbook-service
 # gcloud app browse -s guestbook-service
+
+# ./mvnw clean compile jib:build

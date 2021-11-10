@@ -18,3 +18,5 @@ fi
 # ./mvnw package appengine:deploy -DskipTests
 # gcloud app logs tail -s default
 # gcloud app browse
+
+# ./mvnw clean compile jib:build

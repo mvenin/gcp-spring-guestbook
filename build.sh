@@ -19,3 +19,14 @@ fi
 #curl -XPOST -H "content-type: application/json"   -d '{"name": "Ray", "message": "Hello CloudSQL"}'   http://localhost:8081/guestbookMessages
 #curl http://localhost:8081/guestbookMessages
 
+# gcloud container clusters create guestbook-cluster \
+#     --zone=europe-west1-b \
+#     --num-nodes=2 \
+#     --machine-type=n1-standard-2 \
+#     --enable-autorepair \
+#     --enable-stackdriver-kubernetes
+
+
+# kubectl create secret generic guestbook-service-account \
+#   --from-file=$HOME/service-account.json
+# kubectl describe secret guestbook-service-account

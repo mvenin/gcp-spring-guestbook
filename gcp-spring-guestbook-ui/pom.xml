@@ -90,6 +90,19 @@
             <deploy.projectId>GCLOUD_CONFIG</deploy.projectId>
             </configuration>
         </plugin>
+
+        <plugin>
+                <groupId>com.google.cloud.tools</groupId>
+                <artifactId>jib-maven-plugin</artifactId>
+                <version>2.4.0</version>
+                <configuration>
+                    <to>
+                    <!-- Replace [PROJECT_ID]! -->
+                    <image>gcr.io/api-project-880531456/guestbook-frontend</image>
+                    </to>
+                </configuration>
+            </plugin>
+
     </plugins>
 </build>
 
