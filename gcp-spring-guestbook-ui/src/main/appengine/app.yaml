@@ -1,0 +1,9 @@
+runtime: java11
+instance_class: B4_1G
+manual_scaling:
+  instances: 2
+env_variables:
+  SPRING_PROFILES_ACTIVE: cloud
+  # REPLACE PROJECT_ID with your project ID!
+  MESSAGES_ENDPOINT: https://guestbook-service-dot-api-project-880531456.appspot.com/guestbookMessages
+  #                  https://guestbook-service-dot-api-project-880531456.ew.r.appspot.com

@@ -17,3 +17,7 @@ fi
 
 #curl -XPOST -H "content-type: application/json"   -d '{"name": "Ray", "message": "Hello CloudSQL"}'   http://localhost:8081/guestbookMessages
 #curl http://localhost:8081/guestbookMessages
+
+# ./mvnw package appengine:deploy -DskipTests
+# gcloud app logs tail -s guestbook-service
+# gcloud app browse -s guestbook-service

@@ -18,10 +18,14 @@ import org.springframework.cloud.gcp.vision.CloudVisionTemplate;
 import com.google.cloud.vision.v1.Feature.Type;
 import com.google.cloud.vision.v1.AnnotateImageResponse;
 
-@Log4j2
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+// @Log4j2
 @Controller
 @SessionAttributes("name")
 public class FrontendController {
+    private static final Logger log = LogManager.getLogger(FrontendController.class);
 
     // @Autowired
     // private PubSubTemplate pubSubTemplate;
@@ -74,6 +78,7 @@ public class FrontendController {
             }
              // After writing to GCS, analyze the image.
              AnnotateImageResponse response = visionTemplate.analyzeImage(resource, Type.LABEL_DETECTION);
+             System.out.println(response);
              log.info(response.toString());
         }
 
