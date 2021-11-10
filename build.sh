@@ -30,3 +30,10 @@ fi
 # kubectl create secret generic guestbook-service-account \
 #   --from-file=$HOME/service-account.json
 # kubectl describe secret guestbook-service-account
+
+# kubectl apply -f ./k8s/
+#  watch kubectl get pods
+
+# kubectl get svc
+# kubectl delete all
+# gcloud services disable container.googleapis.com

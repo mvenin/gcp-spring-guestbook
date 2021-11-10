@@ -42,7 +42,7 @@
                 <configuration>
                     <to>
                     <!-- Replace [PROJECT_ID]! -->
-                    <image>gcr.io/api-project-880531456/guestbook-frontend</image>
+                    <image>gcr.io/api-project-880531456/guestbook-service</image>
                     </to>
                 </configuration>
             </plugin>

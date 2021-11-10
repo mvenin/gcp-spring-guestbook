@@ -35,7 +35,7 @@ spec:
           secretName: guestbook-service-account
       containers:
       - name: guestbook-frontend
-        image: saturnism/spring-gcp-guestbook-frontend:latest
+        image: gcr.io/api-project-880531456/guestbook-frontend:latest
         volumeMounts:
         - name: credentials 
           mountPath: "/etc/credentials"
